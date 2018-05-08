@@ -1,4 +1,4 @@
-import java.util.Scanner;
+	import java.util.Scanner;
 
 public class FortuneTellerOne {
 
@@ -13,20 +13,33 @@ public class FortuneTellerOne {
 		System.out.println("Hello " + firstName + " " + lastName + "!");
 
 		System.out.println("What is your birth month?");
-		String birthMonth = input.next();
+		int birthMonth = input.nextInt();
 		String bees = "";
 
-		if (birthMonth.equals("December" + "January" + "February")) {
-			bees = "Cedar Bees";
-		}
-		if (birthMonth.equals("March" + "April" + "May")) {
-			bees = "Honey Bees";
-		}
-		if (birthMonth.equals("June" + "July" + "August")) {
-			bees = "Sweat Bees";
-		}
-		if (birthMonth.equals("September" + "October" + "November")) {
-			bees = "Carpenter Bees";
+		if (birthMonth == 12) {
+			bees = "Cedar Bee";
+		}else if (birthMonth == 1) {
+			bees = "Cedar Bee";
+		}else if (birthMonth == 2) {
+			bees = "Cedar Bee";
+		}else if (birthMonth == 3) {
+			bees = "Honey Bee";
+		}else if (birthMonth == 4) {
+			bees = "Honey Bee";
+		}else if (birthMonth == 5) {
+			bees = "Honey Bee";
+		}else if (birthMonth == 6) {
+			bees = "Sweat Bee";
+		}else if (birthMonth == 7) {
+			bees = "Sweat Bee";
+		}else if (birthMonth == 8) {
+			bees = "Sweat Bee";
+		}else if (birthMonth == 9) {
+			bees = "Carpenter Bee";
+		}else if (birthMonth == 10) {
+			bees = "Carpenter Bee";
+		}else if (birthMonth == 11) {
+			bees = "Carpenter Bee";
 		}
 
 		System.out.println("What is your age?");
@@ -44,17 +57,28 @@ public class FortuneTellerOne {
 		System.out.println("What is your favorite ROYGBIV color?" + " Enter the word 'help' to get a list of colors.");
 		String faveColor = input.next();
 		String colors = "";
-
-		if (faveColor.equals("help")) {
+		{
+		if (faveColor.equalsIgnoreCase("help")) {
 			System.out.println("Red, Orange, Yellow, Green, Blue, Indigo, Violet");
-		} else if (faveColor.equals("indigo" + "violet" + "blue")) {
+			faveColor = input.next();}
+			
+		if (faveColor.equalsIgnoreCase("Indigo")) {
 			colors = "Johnson's Blue Geranium";
-		} else if (faveColor.equals("Green")) {
+		}else if (faveColor.equalsIgnoreCase("Violet")) {
+			colors = "Johnson's Blue Geranium";
+		}else if (faveColor.equalsIgnoreCase("Blue")) {
+			colors = "Johnson's Blue Geranium";
+		}else if (faveColor.equalsIgnoreCase("Green")) {
 			colors = "Cushion Spurge";
-		} else if (faveColor.equals("Red" + "Orange" + "Yellow")) {
+		}else if (faveColor.equalsIgnoreCase("Red")) {
+			colors = "Blanket Flower";
+		}else if (faveColor.equalsIgnoreCase("Orange")) {
+			colors = "Blanket Flower";
+		}else if (faveColor.equalsIgnoreCase("Yellow")) {
 			colors = "Blanket Flower";
 		}
-
+		}
+		
 		System.out.println("How many siblings do you have?");
 		int siblingNumber = input.nextInt();
 		String siblings = "";
@@ -71,3 +95,5 @@ public class FortuneTellerOne {
 	}
 
 }
+
+
